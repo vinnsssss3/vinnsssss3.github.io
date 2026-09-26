@@ -12,7 +12,7 @@ CONTENT.site = {
   location: "Jakarta, Indonesia",
   status: "Open to backend & infrastructure internships",
 
-  email: "marvino.maruli@binus.ac.id",
+  email: "marvinomaruli@gmail.com",
   github: "https://github.com/vinnsssss3",
   linkedin: "https://www.linkedin.com/in/marvino-maruli-a317b4325",
   cv: "assets/Marvino_Maruli_CV.pdf", 
