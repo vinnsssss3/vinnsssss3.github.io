@@ -15,7 +15,7 @@ CONTENT.site = {
   email: "marvino.maruli@binus.ac.id",
   github: "https://github.com/vinnsssss3",
   linkedin: "https://www.linkedin.com/in/marvino-maruli-a317b4325",
-  cv: "", // put your CV at assets/cv.pdf, then change this to "assets/cv.pdf"
+  cv: "assets/Marvino_Maruli_CV.pdf", 
 
   // Shown in the About section under "Currently learning".
   learning: [
