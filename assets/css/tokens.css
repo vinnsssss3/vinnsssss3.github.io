@@ -1,0 +1,102 @@
+/*
+  DESIGN TOKENS
+  Every colour, font and spacing value used on the site lives here.
+  Change a value once and the whole site follows.
+*/
+:root {
+  /* Colour: light theme (warm paper + ink + one signal colour) */
+  --paper: #f3efe6;
+  --paper-2: #ebe5d8;
+  --card: #faf7f0;
+  --ink: #16140f;
+  --ink-2: #3a362e;
+  --muted: #6b6559;
+  --line: #d6cebd;
+  --accent: #c93c12;
+  --accent-text: #b93a10; /* darker, for small text: passes WCAG AA contrast */
+  --accent-ink: #ffffff;
+  --accent-soft: #f7d9cc;
+  --good: #2f7a4f;
+  --shadow: var(--ink);
+  --edge: var(--ink);
+  --grain-opacity: 0.16;
+
+  /* Type */
+  --font-display: "Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --font-serif: "Instrument Serif", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+
+  /* Fluid type scale: min size, grows with screen width, max size */
+  --step--1: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.45vw, 1.4rem);
+  --step-2: clamp(1.5rem, 1.3rem + 0.9vw, 2rem);
+  --step-3: clamp(2rem, 1.6rem + 2vw, 3.25rem);
+  --step-4: clamp(3.2rem, 2rem + 7vw, 8.5rem);
+
+  /* Spacing */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-section: clamp(4.5rem, 3rem + 7vw, 9rem);
+
+  /* Shape & motion */
+  --radius: 10px;
+  --radius-s: 6px;
+  --border: 1.5px solid var(--edge);
+  --hard-shadow: 4px 4px 0 var(--shadow);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 0.6s;
+
+  --container: 1180px;
+  --nav-h: 68px;
+
+  color-scheme: light;
+}
+
+/* Dark theme: used when the visitor's system is dark… */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #121110;
+    --paper-2: #1a1917;
+    --card: #1c1a18;
+    --ink: #ede8dc;
+    --ink-2: #cfc9bc;
+    --muted: #9c9588;
+    --line: #34302b;
+    --accent: #ff6a3d;
+    --accent-text: #ff6a3d;
+    --accent-ink: #16140f;
+    --accent-soft: #3a2119;
+    --good: #6fd3a0;
+    --shadow: #4a443b;
+    --edge: #6a6357;
+    --grain-opacity: 0.18;
+    color-scheme: dark;
+  }
+}
+
+/* …or when they pick dark with the toggle. */
+:root[data-theme="dark"] {
+  --paper: #121110;
+  --paper-2: #1a1917;
+  --card: #1c1a18;
+  --ink: #ede8dc;
+  --ink-2: #cfc9bc;
+  --muted: #9c9588;
+  --line: #34302b;
+  --accent: #ff6a3d;
+  --accent-text: #ff6a3d;
+  --accent-ink: #16140f;
+  --accent-soft: #3a2119;
+  --good: #6fd3a0;
+  --shadow: #4a443b;
+  --edge: #6a6357;
+  --grain-opacity: 0.18;
+  color-scheme: dark;
+}
