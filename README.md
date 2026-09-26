@@ -13,7 +13,7 @@ website/
 ├── index.html            ← the page skeleton (sections, headings, hero text)
 ├── 404.html              ← shown when someone opens a link that doesn't exist
 ├── .nojekyll             ← tells GitHub Pages to serve files as they are
-├── content/              ← ✏️ YOUR CONTENT: edit these files
+├── content/              ← YOUR CONTENT: edit these files
 │   ├── site.js           ←   name, email, links, CV, "currently learning"
 │   ├── projects.js       ←   every project (featured, university, other)
 │   ├── research.js       ←   papers
@@ -23,7 +23,7 @@ website/
 └── assets/
     ├── css/
     │   ├── fonts.css      ← loads the font files
-    │   ├── tokens.css     ← 🎨 colours, fonts, sizes (the "design system")
+    │   ├── tokens.css     ← colours, fonts, sizes (the "design system")
     │   ├── base.css       ← default look of plain elements (body, links, headings)
     │   ├── layout.css     ← page structure: nav, hero, sections, footer
     │   ├── components.css ← reusable pieces: buttons, cards, timeline, dialog
